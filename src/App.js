@@ -5,7 +5,12 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <div className="row" >
+          <div className="col col-6" >left</div>
+          <div className="col col-6" >right</div>
+        </div>
         <img src={logo} className="App-logo" alt="logo" />
+        
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
