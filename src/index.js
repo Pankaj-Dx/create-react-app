@@ -1,21 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import Dashboard from "./Dashboard"
 import reportWebVitals from './reportWebVitals';
-import { Route, Switch, BrowserRouter as Router } from "react-router-dom";
-// import { Route, Router } from "react-router";
+import AppRoute from "./AppRoute";
 import 'bootstrap/dist/css/bootstrap.css';
 
 
 ReactDOM.render(
-  <Router>
-    <Switch>
-      <Route path="/" exact component={App} />
-      <Route path="/dashboard" exact component={Dashboard} />
-    </Switch>
-  </Router>,
+  <AppRoute />,
   document.getElementById('root')
 );
 
