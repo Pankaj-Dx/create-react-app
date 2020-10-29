@@ -6,10 +6,8 @@ import Dashboard from "./Dashboard"
 import reportWebVitals from './reportWebVitals';
 import { Route, Switch, BrowserRouter as Router } from "react-router-dom";
 // import { Route, Router } from "react-router";
-import { createBrowserHistory } from "history";
 import 'bootstrap/dist/css/bootstrap.css';
 
-const history = createBrowserHistory();
 
 ReactDOM.render(
   <Router>
