@@ -1,7 +1,16 @@
+import React, {Component} from "react";
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+class App extends Component {
+  constructor(props) {
+    super(props);
+  }
+  navToDashboard = () => {
+    // history.push("/Dashboard")
+    this.props.history.push({pathname:"/dashboard", state: {message:" comming from App" }})
+  }
+  render(){
   return (
     <div className="App">
       <header className="App-header">
@@ -10,7 +19,7 @@ function App() {
           <div className="col col-6" >right</div>
         </div>
         <img src={logo} className="App-logo" alt="logo" />
-        
+        <button onClick={this.navToDashboard} ></button>
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -25,6 +34,7 @@ function App() {
       </header>
     </div>
   );
+  }
 }
 
 export default App;
