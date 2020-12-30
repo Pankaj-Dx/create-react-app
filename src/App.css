@@ -13,6 +13,34 @@
   }
 }
 
+.image-style {
+  width: auto;
+  height: auto;
+  padding: 0px;
+  position: absolute;
+  
+ }
+
+ .card-style {
+  position: absolute !important;
+  left: 40%;
+  top: 30%;
+ }
+
+@media (max-width: 768px)  {
+ .image-style {
+  width: auto;
+  height: auto;
+  padding: 0px;
+  position: relative;
+  justify-content: stretch;
+ }
+
+ .card-style {
+  position: relative !important;
+ }
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -26,6 +54,24 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.login-form {
+  padding: 20px;
+}
+
+.user-name {
+  margin: 20px;
+}
+
+
+.password {
+  margin: 20px;
+}
+
+.login-button {
+  text-align: left;
+  margin-left: 20px;
 }
 
 @keyframes App-logo-spin {

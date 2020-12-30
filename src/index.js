@@ -4,10 +4,14 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import AppRoute from "./AppRoute";
 import 'bootstrap/dist/css/bootstrap.css';
-
-
+ 
+export const userContext = React.createContext();
+const userName = "pankaj";
 ReactDOM.render(
-  <AppRoute />,
+  <userContext.Provider value={userName}>
+    <AppRoute />
+  </userContext.Provider>
+  ,
   document.getElementById('root')
 );
 
