@@ -13,6 +13,17 @@
   }
 }
 
+.html, .body, .header, #intro {
+  height: 100vh;
+  width: 100vw;
+}
+
+#intro {
+  position: fixed;
+  background: url("https://www.geeklawblog.com/wp-content/uploads/sites/528/2018/12/liprofile-656x369.png") no-repeat center center fixed;
+  background-size: cover;
+}
+
 .image-style {
   width: auto;
   height: auto;
