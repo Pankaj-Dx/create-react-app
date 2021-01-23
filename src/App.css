@@ -1,3 +1,99 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+.sidebar {
+  position: fixed;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background: #042331;
+  transition: all .5s ease;
+}
+
+.sidebar header {
+  font-size: 22px;
+  color: white;
+  text-align: center;
+  line-height: 70px;
+  background: #063146;
+  user-select: none;
+}
+
+.sidebar ul a{
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 65px;
+  font-size: 20px;
+  color: white !important;
+  padding-left: 40px;
+  box-sizing: border-box;
+  border-top: 1px solid rgba(255, 255, 255, .1);
+  border-bottom: 1px solid black;
+  transition: .4s;
+}
+
+ul li:hover a{
+  padding-left: 50px;
+}
+
+.sidebar ul a i{
+  margin-right: 16px;
+}
+
+#check {
+  display: none !important;
+}
+
+label #btn, label #cancel {
+  position: absolute;
+  cursor: pointer;
+  background: #042331;
+  border-radius: 3px;
+}
+
+label #btn{
+  left: 40px;
+  top: 25px;
+  font-size: 35px;
+  color: white;
+  padding: 6px 12px;
+  transition: all .1s;
+}
+
+label #cancel { 
+  z-index: 1111;
+  display: none;
+  left: 185px !important;
+  top: 30px;
+  font-size: 30px;
+  color: #0a5275 !important;
+  padding: 4px 9px;
+  transition: all .5s ease;
+}
+
+#check:checked ~ .sidebar {
+  left: 0 !important;
+}
+
+#check:checked ~ label #btn{
+  left: 250px;
+  opacity: 0;
+  pointer-events: none !important;
+}
+
+#check:checked ~ label #cancel{
+  left: 185px;
+  display: inline;
+}
+
+
+
+
 .App {
   text-align: center;
 }
@@ -13,12 +109,64 @@
   }
 }
 
+.text-style {
+  font-size: 14px;
+}
+
+.flex-start {
+  justify-content: flex-start !important;
+  padding-right: 0px;
+}
+
+.flex-end {
+  justify-content: flex-end !important;
+}
+
+.align-item-center {
+  align-items: center;
+  height: 80px;
+  justify-content: center;
+  display: flex;
+}
+
 .image-style {
   width: auto;
   height: auto;
   padding: 0px;
   position: absolute;
   
+ }
+
+ .layout-padding {
+  padding: 10px 40px 10px 40px;
+  margin: 0px 40px 0px 40px;
+ }
+
+ .center-section {
+  height: auto;
+  border: 2px solid red;
+  width: 375px;
+ }
+
+ .pr-0 {
+   padding-right: 0px;
+ }
+
+ .MuiFormControlLabel-label {
+  font-size: 14px !important;
+ }
+
+ .bg-image {
+   background-image: url("./assets/img/login-background.svg");
+   background-size: cover;
+   justify-content: center;
+   align-items: center;
+   background-repeat: no-repeat;
+   user-select: none;
+   display: flex;
+   height: 100vh;
+   /* overflow: hidden; */
+   width: 100vw;;
  }
 
  .card-style {
@@ -82,3 +230,4 @@
     transform: rotate(360deg);
   }
 }
+
