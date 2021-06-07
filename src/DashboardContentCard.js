@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
 import Card from '@material-ui/core/Card';
 
 export const DashboardContentCard = (props) => {

@@ -1,5 +1,5 @@
 
-import './App.css';
+import './App.scss';
 import React, { useContext, useReducer } from "react";
 import { userContext } from "./index";
 import loginImag from "./assets/img/login-background.svg";
