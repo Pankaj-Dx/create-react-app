@@ -3,4 +3,10 @@
     width: auto;
 }
 
+.sidebar-tittle {
+    font-size: 24px;
+    padding: 0px 46px 0px 0px;
+    font-weight: 500;
+}
+
 .bm-30{  margin: 0px 0px 30px 0px }
