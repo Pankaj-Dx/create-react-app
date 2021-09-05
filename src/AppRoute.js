@@ -2,6 +2,7 @@ import React from 'react';
 import './index.css';
 import App from './App';
 import Dashboard from "./Dashboard"
+import TableComp from "./componenets/TableComponent/TableComp";
 import { Route, Switch, BrowserRouter as Router } from "react-router-dom";
 // import { Route, Router } from "react-router";
 import 'bootstrap/dist/css/bootstrap.css';
@@ -12,6 +13,7 @@ const AppRoute = () => (
         <Switch>
             <Route path="/" exact component={App} />
             <Route path="/dashboard" exact component={Dashboard} />
+            <Route path="/table" exact component={TableComp} />
         </Switch>
     </Router>
 )

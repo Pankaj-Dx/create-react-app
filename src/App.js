@@ -3,26 +3,10 @@ import './App.css';
 import React, { useContext, useReducer } from "react";
 import { userContext } from "./index";
 import loginImag from "./assets/img/login-background.svg";
+import { reducer } from './reducer';
 
-const initialstate = {
+export const initialstate = {
   count: 0
-}
-
-function reducer(state, action) {
-  switch (action.type) {
-    case "increment":
-      return {
-        count: state.count + 1
-      }
-    case "Decrement":
-      return {
-        count: state.count - 1
-      }
-    case "reset":
-      return initialstate;
-    default:
-      return initialstate;
-  }
 }
 
 const App = () => {
